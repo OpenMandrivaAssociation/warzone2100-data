@@ -1,6 +1,6 @@
 %define	oname	warzone2100
 %define	name	%{oname}-data
-%define	version	2.0.5
+%define	version	2.0.6
 %define	release	1
 
 Name:		%{name}
@@ -64,5 +64,3 @@ rm -rf %{buildroot}
 %files
 %defattr(644,root,root,755)
 %{_gamesdatadir}/%{oname}
-
-
