@@ -1,6 +1,6 @@
 %define	oname	warzone2100
 %define	name	%{oname}-data
-%define	version	2.0.7
+%define	version	2.0.9
 %define	release	1
 
 Name:		%{name}
