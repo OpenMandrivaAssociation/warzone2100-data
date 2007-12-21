@@ -13,6 +13,7 @@ Summary:	3D realtime strategy on a future Earth
 License:	GPL
 Requires:	%{oname} >= %{version}
 BuildArch:	noarch
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 Upon entering the game you land from your transport and establish your base.
