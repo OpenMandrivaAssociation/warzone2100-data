@@ -1,13 +1,13 @@
 %define	oname	warzone2100
 %define	name	%{oname}-data
-%define	version	2.0.9
+%define	version	2.0.10
 %define	release	1
 
 Name:		%{name}
 Version:	%{version}
 Release:	%mkrel %{release}
 Group:		Games/Strategy
-Source0:	http://download.berlios.de/warzone/%{name}-%{version}.tar.bz2
+Source0:	http://download.berlios.de/warzone/%{oname}-%{version}.tar.bz2
 Url:		http://wz2100.net/
 Summary:	3D realtime strategy on a future Earth
 License:	GPL
