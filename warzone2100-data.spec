@@ -1,16 +1,17 @@
 %define	oname	warzone2100
 %define	name	%{oname}-data
-%define	version	2.0.10
-%define	release	1
+%define	version	2.1
+%define pre	beta4
+%define	release	0.%{pre}.1
 
 Name:		%{name}
 Version:	%{version}
 Release:	%mkrel %{release}
 Group:		Games/Strategy
-Source0:	http://download.berlios.de/warzone/%{oname}-%{version}.tar.bz2
+Source0:	http://download.gna.org/warzone/releases/2.1/%{oname}-%{version}_%{pre}.tar.bz2
 Url:		http://wz2100.net/
 Summary:	3D realtime strategy on a future Earth
-License:	GPL
+License:	GPLv2+
 Requires:	%{oname} >= %{version}
 BuildArch:	noarch
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
@@ -48,7 +49,7 @@ Dec 6, 2004 when it was let out the doors for the first time under a
 GPL license.
 
 %prep
-%setup -q -n %{oname}-%{version}
+%setup -q -n %{oname}-%{version}_%{pre}
 
 %build
 
@@ -64,3 +65,4 @@ rm -rf %{buildroot}
 %files
 %defattr(644,root,root,755)
 %{_gamesdatadir}/%{oname}
+
