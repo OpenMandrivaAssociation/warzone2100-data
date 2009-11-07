@@ -1,18 +1,15 @@
 %define	oname	warzone2100
 %define	name	%{oname}-data
 %define	version	2.2.4
-%define videoversion 2.2-1
 %define	release	1
 
 Name:		%{name}
 Version:	%{version}
 Release:	%mkrel %{release}
 Group:		Games/Strategy
-#Source0:	http://download.gna.org/warzone/releases/2.1/%{oname}-%{version}.tar.bz2
 Source0:        http://downloads.sourceforge.net/project/warzone2100/warzone2100/Warzone%202100%20%{version}/warzone2100-%{version}.tar.gz
-Source1:	http://www.il.fontys.nl/~giel/warzone/videos/warzone2100-sequences-en-lo-%{videoversion}.wz
 Url:		http://wz2100.net/
-Summary:	3D realtime strategy on a future Earth
+Summary:	Data files for warzone2100
 License:	GPLv2+
 Requires:	%{oname} >= %{version}
 BuildArch:	noarch
@@ -52,7 +49,6 @@ GPL license.
 
 %prep
 %setup -q -n %{oname}-%{version}
-%setup -T -D -a 1 -c -n %{oname}-%{version}
 
 %build
 
@@ -61,7 +57,6 @@ rm -rf %{buildroot}
 
 install -d %{buildroot}%{_gamesdatadir}/%{oname}
 cp -r data/* %{buildroot}%{_gamesdatadir}/%{oname}
-cp -r sequences %{buildroot}%{_gamesdatadir}/%{oname}
 
 %clean
 rm -rf %{buildroot}
@@ -69,4 +64,3 @@ rm -rf %{buildroot}
 %files
 %defattr(644,root,root,755)
 %{_gamesdatadir}/%{oname}
-
