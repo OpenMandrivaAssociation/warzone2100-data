@@ -1,6 +1,6 @@
 %define	oname	warzone2100
 %define	name	%{oname}-data
-%define	version	2.2.4
+%define	version	2.3.0
 %define	release	1
 
 Name:		%{name}
@@ -49,8 +49,6 @@ GPL license.
 
 %prep
 %setup -q -n %{oname}-%{version}
-
-%build
 
 %install
 rm -rf %{buildroot}
