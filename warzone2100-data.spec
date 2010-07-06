@@ -1,6 +1,6 @@
 %define	oname	warzone2100
 %define	name	%{oname}-data
-%define	version	2.3.0
+%define	version	2.3.1a
 %define	release	1
 
 Name:		%{name}
@@ -48,7 +48,7 @@ Dec 6, 2004 when it was let out the doors for the first time under a
 GPL license.
 
 %prep
-%setup -q -n %{oname}-%{version}
+%setup -q -n %{oname}-2.3.1
 
 %install
 rm -rf %{buildroot}
