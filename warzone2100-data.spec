@@ -1,13 +1,13 @@
 %define	oname	warzone2100
 %define	name	%{oname}-data
-%define	version	2.3.4
+%define	version	2.3.5
 %define	release	1
 
 Name:		%{name}
 Version:	%{version}
 Release:	%mkrel %{release}
 Group:		Games/Strategy
-Source0:        http://downloads.sourceforge.net/project/warzone2100/warzone2100/Warzone%202100%20%{version}/warzone2100-%{version}.tar.gz
+Source0:        http://downloads.sourceforge.net/project/warzone2100/releases/%{version}/warzone2100-%{version}.tar.gz
 Url:		http://wz2100.net/
 Summary:	Data files for warzone2100
 License:	GPLv2+
