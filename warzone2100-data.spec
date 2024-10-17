@@ -8,7 +8,7 @@ Version:	%{version}
 Release:	%mkrel %{release}
 Group:		Games/Strategy
 Source0:        http://downloads.sourceforge.net/project/warzone2100/releases/%{version}/warzone2100-%{version}.tar.gz
-Url:		http://wz2100.net/
+Url:		https://wz2100.net/
 Summary:	Data files for warzone2100
 License:	GPLv2+
 Requires:	%{oname} >= %{version}
